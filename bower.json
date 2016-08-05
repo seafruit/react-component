@@ -1,0 +1,21 @@
+{
+  "name": "react-hello-world-demo",
+  "authors": [
+    "Peng.Li <peng.li@rea-group.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "babel-standalone": "^6.10.3",
+    "react": "^15.3.0"
+  }
+}
