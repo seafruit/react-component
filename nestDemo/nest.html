@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Hello React!</title>
+    <script src="../bower_components/react/react.min.js"></script>
+    <script src="../bower_components/react/react-dom.min.js"></script>
+    <script src="../bower_components/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="content"></div>
+<script type="text/babel">
+    class Nest extends React.Component {
+        render() {
+            return (
+                    <div>
+                        <ListDemo />
+                        <div className="Nest">Nest Demo.</div>
+                    </div>
+            )
+        }
+    }
+    class ListDemo extends React.Component {
+        render() {
+            return (
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+            )
+        }
+    }
+
+    ReactDOM.render(
+            <Nest />,
+            document.getElementById('content')
+    );
+</script>
+</body>
+</html>

@@ -10,18 +10,16 @@
 <body>
 <div id="content"></div>
 <script type="text/babel">
-    let FirstReact = React.createClass({
-        render: function () {
-            return (<div>
-                <h1>Hello world</h1>
-            </div>)
+    var MyTitle = React.createClass({
+        render() {
+            return <h1> Create Component! </h1>;
         }
     });
+
     ReactDOM.render(
-            <FirstReact />,
-            document.getElementById("content")
+            <MyTitle />,
+            document.getElementById('content')
     );
 </script>
-
 </body>
 </html>
